@@ -129,6 +129,30 @@ dispatch_game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/build
 .PHONY : dispatch_game/fast
 
+src/color.o: src/color.cpp.o
+.PHONY : src/color.o
+
+# target to build an object file
+src/color.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/color.cpp.o
+.PHONY : src/color.cpp.o
+
+src/color.i: src/color.cpp.i
+.PHONY : src/color.i
+
+# target to preprocess a source file
+src/color.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/color.cpp.i
+.PHONY : src/color.cpp.i
+
+src/color.s: src/color.cpp.s
+.PHONY : src/color.s
+
+# target to generate assembly for a file
+src/color.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/color.cpp.s
+.PHONY : src/color.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -153,6 +177,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/stressCalls.o: src/stressCalls.cpp.o
+.PHONY : src/stressCalls.o
+
+# target to build an object file
+src/stressCalls.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o
+.PHONY : src/stressCalls.cpp.o
+
+src/stressCalls.i: src/stressCalls.cpp.i
+.PHONY : src/stressCalls.i
+
+# target to preprocess a source file
+src/stressCalls.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.i
+.PHONY : src/stressCalls.cpp.i
+
+src/stressCalls.s: src/stressCalls.cpp.s
+.PHONY : src/stressCalls.s
+
+# target to generate assembly for a file
+src/stressCalls.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.s
+.PHONY : src/stressCalls.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... dispatch_game"
+	@echo "... src/color.o"
+	@echo "... src/color.i"
+	@echo "... src/color.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/stressCalls.o"
+	@echo "... src/stressCalls.i"
+	@echo "... src/stressCalls.s"
 .PHONY : help
 
 

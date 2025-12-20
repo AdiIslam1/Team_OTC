@@ -2,7 +2,9 @@ dispatch_game: \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
+  CMakeFiles/dispatch_game.dir/src/color.cpp.o \
   CMakeFiles/dispatch_game.dir/src/main.cpp.o \
+  CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -30,8 +32,7 @@ dispatch_game: \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o \
   /lib/x86_64-linux-gnu/libm.so.6 \
-  /lib64/ld-linux-x86-64.so.2 \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libgcc_s.so.1
+  /lib64/ld-linux-x86-64.so.2
 
 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o:
 
@@ -39,7 +40,11 @@ dispatch_game: \
 
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
+CMakeFiles/dispatch_game.dir/src/color.cpp.o:
+
 CMakeFiles/dispatch_game.dir/src/main.cpp.o:
+
+CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
 
@@ -96,5 +101,3 @@ CMakeFiles/dispatch_game.dir/src/main.cpp.o:
 /lib/x86_64-linux-gnu/libm.so.6:
 
 /lib64/ld-linux-x86-64.so.2:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libgcc_s.so.1:

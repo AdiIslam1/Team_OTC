@@ -72,10 +72,24 @@ include CMakeFiles/dispatch_game.dir/flags.make
 CMakeFiles/dispatch_game.dir/codegen:
 .PHONY : CMakeFiles/dispatch_game.dir/codegen
 
+CMakeFiles/dispatch_game.dir/src/color.cpp.o: CMakeFiles/dispatch_game.dir/flags.make
+CMakeFiles/dispatch_game.dir/src/color.cpp.o: /home/saad/Downloads/dispatch_game/src/color.cpp
+CMakeFiles/dispatch_game.dir/src/color.cpp.o: CMakeFiles/dispatch_game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/dispatch_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dispatch_game.dir/src/color.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dispatch_game.dir/src/color.cpp.o -MF CMakeFiles/dispatch_game.dir/src/color.cpp.o.d -o CMakeFiles/dispatch_game.dir/src/color.cpp.o -c /home/saad/Downloads/dispatch_game/src/color.cpp
+
+CMakeFiles/dispatch_game.dir/src/color.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dispatch_game.dir/src/color.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/saad/Downloads/dispatch_game/src/color.cpp > CMakeFiles/dispatch_game.dir/src/color.cpp.i
+
+CMakeFiles/dispatch_game.dir/src/color.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dispatch_game.dir/src/color.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saad/Downloads/dispatch_game/src/color.cpp -o CMakeFiles/dispatch_game.dir/src/color.cpp.s
+
 CMakeFiles/dispatch_game.dir/src/main.cpp.o: CMakeFiles/dispatch_game.dir/flags.make
 CMakeFiles/dispatch_game.dir/src/main.cpp.o: /home/saad/Downloads/dispatch_game/src/main.cpp
 CMakeFiles/dispatch_game.dir/src/main.cpp.o: CMakeFiles/dispatch_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/dispatch_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dispatch_game.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/dispatch_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dispatch_game.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dispatch_game.dir/src/main.cpp.o -MF CMakeFiles/dispatch_game.dir/src/main.cpp.o.d -o CMakeFiles/dispatch_game.dir/src/main.cpp.o -c /home/saad/Downloads/dispatch_game/src/main.cpp
 
 CMakeFiles/dispatch_game.dir/src/main.cpp.i: cmake_force
@@ -86,18 +100,36 @@ CMakeFiles/dispatch_game.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dispatch_game.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saad/Downloads/dispatch_game/src/main.cpp -o CMakeFiles/dispatch_game.dir/src/main.cpp.s
 
+CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o: CMakeFiles/dispatch_game.dir/flags.make
+CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o: /home/saad/Downloads/dispatch_game/src/stressCalls.cpp
+CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o: CMakeFiles/dispatch_game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/dispatch_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o -MF CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o.d -o CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o -c /home/saad/Downloads/dispatch_game/src/stressCalls.cpp
+
+CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/saad/Downloads/dispatch_game/src/stressCalls.cpp > CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.i
+
+CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saad/Downloads/dispatch_game/src/stressCalls.cpp -o CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.s
+
 # Object files for target dispatch_game
 dispatch_game_OBJECTS = \
-"CMakeFiles/dispatch_game.dir/src/main.cpp.o"
+"CMakeFiles/dispatch_game.dir/src/color.cpp.o" \
+"CMakeFiles/dispatch_game.dir/src/main.cpp.o" \
+"CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o"
 
 # External object files for target dispatch_game
 dispatch_game_EXTERNAL_OBJECTS =
 
+dispatch_game: CMakeFiles/dispatch_game.dir/src/color.cpp.o
 dispatch_game: CMakeFiles/dispatch_game.dir/src/main.cpp.o
+dispatch_game: CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o
 dispatch_game: CMakeFiles/dispatch_game.dir/build.make
 dispatch_game: CMakeFiles/dispatch_game.dir/compiler_depend.ts
 dispatch_game: CMakeFiles/dispatch_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/saad/Downloads/dispatch_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dispatch_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/saad/Downloads/dispatch_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable dispatch_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dispatch_game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
