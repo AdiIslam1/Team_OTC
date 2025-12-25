@@ -7,6 +7,10 @@ using namespace std;
 #include <vector>
 #include <random>
 #include <ctime>
+#include <thread>
+#include <chrono>
+#include <mutex>
+#include <atomic>
 
 class StressCall {
 private:
@@ -14,6 +18,7 @@ private:
     string activity;
     string address;
     string priority; // Low, Medium, High, Very high, Critical
+    int timeLeft;
 public:
     //getters
     string getType() const {
@@ -27,6 +32,9 @@ public:
     }
     string getPriority() const {
         return this->priority;
+    }
+    int getTimeLeft() const {
+        return this->timeLeft;
     }
     //setters
     void setType(string type) {
@@ -42,17 +50,22 @@ public:
         this->priority = priority;
     }
     //constructor
-    StressCall(string type, string activity, string address, string priority) {
+    StressCall(string type, string activity, string address, string priority, int timeLeft) {
         setType(type);
         setActivity(activity);
         setAddress(address);
         setPriority(priority);
+        this->timeLeft = timeLeft;
     }
 
+    void tick() {
+        if (timeLeft > 0) timeLeft--;
+    }
     static void generate(int level);
-    static void printCallList();
+    static void printCallList(atomic<bool> &isRunning);
 };
 
+extern std::mutex callMutex;
 extern std::vector<std::string> types;
 extern std::vector<std::string> priorities;
 extern std::vector<std::string> addresses;

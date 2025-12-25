@@ -9,6 +9,7 @@ vector<string> crimeStressCalls = {"Armed robbery", "Pedestrian snatching", "Phy
 vector<string> politicalStressCalls = {"Road blockade", "Unannounced procession", "Vehicle arson", "Inter-party clash", "Barricade deployment", "Mass rally", "Vandalized party office", "Slogan chanting crowd", "Improvised explosive device", "Police cordon breach", "Hunger strike", "Tire burning", "Projectile throwing", "VIP motorcade delay", "Unauthorized public speech", "Religious-political gathering", "Civil disobedience", "Government building sit-in", "Political graffiti spree", "Curfew violation"};
 vector<string> disasterStressCalls = {"Flash flood", "High-rise building fire", "Earthquake tremor damage", "Massive tree fall", "Monsoon waterlogging", "Thunderstorm casualty", "Industrial warehouse fire", "Building tilt/subsidence", "Urban storm damage", "Slum fire outbreak", "Lightning strike", "Cyclonic wind damage", "Riverbank erosion", "Submerged roadway", "Garment factory fire", "Tornado debris", "Bridge structural failure", "Mudslide risk", "Massive debris blockage", "Emergency shelter overflow"};
 vector <StressCall> calls;
+mutex callMutex;
 
 int get_random(int min, int max) {
     // 'static' ensures the engine is initialized only once
@@ -20,6 +21,8 @@ int get_random(int min, int max) {
 }
 
 void StressCall::generate(int level) {
+    //LOCK
+    std::lock_guard<std::mutex> lock(callMutex);
     for (int i = 0; i < level; i++) {
         int typeNo = get_random(0, 4);
         int activityNo = get_random(0, 19);
@@ -38,31 +41,63 @@ void StressCall::generate(int level) {
         string address = addresses[addressNo];
         string priority = priorities[priorityNo];
 
-        calls.push_back(StressCall(type, activity, address, priority));
+        calls.push_back(StressCall(type, activity, address, priority, get_random(30, 60)));
     }
 }
 
-void StressCall::printCallList() {
-    int idx = 1;
-    for (StressCall s : calls) {
-        cout << idx << " ";
-        idx++;
-        string type = s.getType();
-        if (type == "Medical") cout << Color::red("[MEDICAL]") << " ";
-        else if (type == "Hazard") cout << Color::yellow("[HAZARD]") << " ";
-        else if (type == "Crime") cout << Color::blue("[CRIME]") << " ";
-        else if (type == "Political") cout << Color::magenta("[POLITICAL]") << " ";
-        else if (type == "Disaster") cout << Color::cyan("[DISASTER]") << " ";
-        string activity = s.getActivity();
-        cout << activity << " at ";
-        string address = s.getAddress();
-        cout << address << " ";
-        string priority = s.getPriority();
-        if (priority == "Low") cout << Color::cyan("[LOW]") << "\n";
-        else if (priority == "Medium") cout << Color::blue("[MEDIUM]") << "\n";
-        else if (priority == "High") cout << Color::yellow("[HIGH]") << "\n";
-        else if (priority == "Very High") cout << Color::bold(Color::yellow("[VERY HIGH]")) << "\n";
-        else if (priority == "Critical") cout << Color::bold(Color::red("[CRITICAL]")) << "\n";
+void clearScreen() {
+    // ANSI escape code to clear screen and move cursor to top-left
+    cout << "\033[2J\033[H";
+    //cout << "\033[4;1H";
+}
+
+void StressCall::printCallList(atomic<bool> &isRunning) {
+    while (isRunning || !calls.empty()) {
+        {
+        //LOCK
+        std::lock_guard<std::mutex> lock(callMutex);
+        clearScreen();
+        cout << Color::cyan("======================================") << endl;
+        cout << Color::yellow(Color::bold(" BACHAO Stress Calls Dispatch Terminal")) << endl;
+        cout << Color::cyan("======================================") << endl;
+        cout << "=== LIVE EMERGENCY DASHBOARD ===" << endl;
+        cout << "Active Calls: " << calls.size() << endl;
+        cout << "--------------------------------" << endl;
+
+        auto it = calls.begin();
+        int idx = 1;
+
+        while (it != calls.end()) {
+            it->tick();
+
+            if (it->getTimeLeft() <= 0) {
+                string msg = Color::red("[EXPIRED/MISSED] ") + it->getType() + " at " + it->getAddress();
+                cout << msg;
+                cout << "\n--------------------------------\n";
+                it = calls.erase(it);
+            } else {
+                cout << idx++ << ". ";
+                string type = it->getType();
+                if (type == "Medical") cout << Color::red("[MEDICAL]");
+                else if (type == "Hazard") cout << Color::yellow("[HAZARD]");
+                else if (type == "Crime") cout << Color::blue("[CRIME]");
+                else if (type == "Political") cout << Color::magenta("[POLITICAL]");
+                else if (type == "Disaster") cout << Color::cyan("[DISASTER]");
+
+                cout << " " << it->getActivity() << "\n   Loc: " << it->getAddress();
+
+                int t = it->getTimeLeft();
+                string timeStr = " [T-" + to_string(t) + "s]";
+
+                if (t <= 5) cout << Color::bold(Color::red(timeStr));
+                else if (t <= 15) cout << Color::yellow(timeStr);
+                else cout << Color::green(timeStr);
+
+                cout << "\n--------------------------------\n";
+
+                ++it;
+            }
+        }} //extra scope given for safe and distinct execution of generate and printCallList
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
-    idx = 1;
 }
