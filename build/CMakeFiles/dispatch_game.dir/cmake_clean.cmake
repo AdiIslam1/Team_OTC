@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dispatch_game.dir/link.d"
   "CMakeFiles/dispatch_game.dir/src/color.cpp.o"
   "CMakeFiles/dispatch_game.dir/src/color.cpp.o.d"
+  "CMakeFiles/dispatch_game.dir/src/heroes.cpp.o"
+  "CMakeFiles/dispatch_game.dir/src/heroes.cpp.o.d"
   "CMakeFiles/dispatch_game.dir/src/main.cpp.o"
   "CMakeFiles/dispatch_game.dir/src/main.cpp.o.d"
   "CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o"

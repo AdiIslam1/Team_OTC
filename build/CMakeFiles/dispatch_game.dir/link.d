@@ -3,6 +3,7 @@ dispatch_game: \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   CMakeFiles/dispatch_game.dir/src/color.cpp.o \
+  CMakeFiles/dispatch_game.dir/src/heroes.cpp.o \
   CMakeFiles/dispatch_game.dir/src/main.cpp.o \
   CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
@@ -41,6 +42,8 @@ dispatch_game: \
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
 CMakeFiles/dispatch_game.dir/src/color.cpp.o:
+
+CMakeFiles/dispatch_game.dir/src/heroes.cpp.o:
 
 CMakeFiles/dispatch_game.dir/src/main.cpp.o:
 

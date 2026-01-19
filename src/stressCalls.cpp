@@ -46,9 +46,14 @@ void StressCall::generate(int level) {
 }
 
 void clearScreen() {
-    // ANSI escape code to clear screen and move cursor to top-left
-    cout << "\033[2J\033[H";
-    //cout << "\033[4;1H";
+    // Clear only the left side of the screen (call list area)
+    // Preserves the right side where hero list is displayed (column 100+)
+    for (int row = 1; row <= 100; row++) {
+        cout << "\033[" << row << ";1H";  // Move to row, column 1
+        // Overwrite with spaces up to column 90 only
+        for (int i = 0; i < 90; i++) cout << " ";
+    }
+    cout << "\033[1;1H";  // Move cursor back to top-left
 }
 
 void StressCall::printCallList(atomic<bool> &isRunning) {

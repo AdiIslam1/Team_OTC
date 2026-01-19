@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/saad/Downloads/dispatch_game
+CMAKE_SOURCE_DIR = /home/saad/Downloads/Team_OTC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/saad/Downloads/dispatch_game/build
+CMAKE_BINARY_DIR = /home/saad/Downloads/Team_OTC/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/saad/Downloads/dispatch_game/build/CMakeFiles /home/saad/Downloads/dispatch_game/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/saad/Downloads/Team_OTC/build/CMakeFiles /home/saad/Downloads/Team_OTC/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/saad/Downloads/dispatch_game/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/saad/Downloads/Team_OTC/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,6 +153,30 @@ src/color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/color.cpp.s
 .PHONY : src/color.cpp.s
 
+src/heroes.o: src/heroes.cpp.o
+.PHONY : src/heroes.o
+
+# target to build an object file
+src/heroes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/heroes.cpp.o
+.PHONY : src/heroes.cpp.o
+
+src/heroes.i: src/heroes.cpp.i
+.PHONY : src/heroes.i
+
+# target to preprocess a source file
+src/heroes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/heroes.cpp.i
+.PHONY : src/heroes.cpp.i
+
+src/heroes.s: src/heroes.cpp.s
+.PHONY : src/heroes.s
+
+# target to generate assembly for a file
+src/heroes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/heroes.cpp.s
+.PHONY : src/heroes.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... src/color.o"
 	@echo "... src/color.i"
 	@echo "... src/color.s"
+	@echo "... src/heroes.o"
+	@echo "... src/heroes.i"
+	@echo "... src/heroes.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -1,7 +1,6 @@
 CMakeFiles/dispatch_game.dir/src/color.cpp.o: \
- /home/saad/Downloads/dispatch_game/src/color.cpp \
- /usr/include/stdc-predef.h \
- /home/saad/Downloads/dispatch_game/include/color.hpp \
+ /home/saad/Downloads/Team_OTC/src/color.cpp /usr/include/stdc-predef.h \
+ /home/saad/Downloads/Team_OTC/include/color.hpp \
  /usr/include/c++/15/string /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \

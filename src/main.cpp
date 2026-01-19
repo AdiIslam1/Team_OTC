@@ -3,10 +3,11 @@
 #include <chrono>
 #include <color.hpp>
 #include <stressCalls.hpp>
+#include <heroes.hpp>
 using namespace std;
 
 int main() {
-    cout << "\033[2J\033[H"; //putting cursor on top left
+    cout << "\033[2J\033[H";
     cout << Color::cyan("======================================") << endl;
     cout << Color::yellow(Color::bold(" BACHAO Stress Calls Dispatch Terminal")) << endl;
     cout << Color::cyan("======================================") << endl;
@@ -17,6 +18,7 @@ int main() {
     StressCall::generate(get_random(2, 4));
 
     thread worker(StressCall::printCallList, ref(isRunning));
+    thread heroWorker(Hero::printHeroList, ref(isRunning));
 
     while (timeToPlay > 0) {
         // Every 20 seconds, generate more calls
@@ -31,6 +33,8 @@ int main() {
     if (worker.joinable()) {
         worker.join();
     }
-
+    if (heroWorker.joinable()) {
+        heroWorker.join();
+    }
     cout << "\n" << Color::bold("Thanks for playing") << endl;
 }
