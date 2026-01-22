@@ -32,6 +32,7 @@ public:
     string getStatus() const { return status; }
 
     static void printHeroList(atomic<bool>& isRunning);
+    virtual void resolveEmergency();
 };
 
 class Medic : public Hero {

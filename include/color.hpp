@@ -4,6 +4,8 @@
 #include <string>
 using namespace std;
 
+// YO YO CHIKI CHIKI
+
 class Color {
 
 private:

@@ -77,3 +77,8 @@ vector<Hero> heroList = {
     Firefighter("Captain Alex", 4, "Available"),
     Firefighter("Lt. Rachel", 5, "Available")
 };
+
+void Hero::resolveEmergency()
+{
+    //body goes here
+}
