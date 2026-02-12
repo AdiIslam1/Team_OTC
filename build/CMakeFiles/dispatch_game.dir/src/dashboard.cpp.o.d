@@ -1,5 +1,6 @@
-CMakeFiles/dispatch_game.dir/src/main.cpp.o: \
- /home/saad/Downloads/Team_OTC/src/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o: \
+ /home/saad/Downloads/Team_OTC/src/dashboard.cpp \
+ /usr/include/stdc-predef.h \
  /home/saad/Downloads/Team_OTC/include/console_utils.hpp \
  /usr/include/c++/15/iostream /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
@@ -168,11 +169,12 @@ CMakeFiles/dispatch_game.dir/src/main.cpp.o: \
  /usr/include/c++/15/limits /usr/include/c++/15/ctime \
  /usr/include/c++/15/bits/parse_numbers.h \
  /usr/include/c++/15/bits/std_mutex.h \
- /usr/include/c++/15/bits/unique_lock.h /usr/include/c++/15/chrono \
- /home/saad/Downloads/Team_OTC/include/color.hpp \
+ /usr/include/c++/15/bits/unique_lock.h \
  /home/saad/Downloads/Team_OTC/include/dashboard.hpp \
  /usr/include/c++/15/atomic /usr/include/c++/15/bits/atomic_base.h \
  /usr/include/c++/15/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/15/chrono \
+ /home/saad/Downloads/Team_OTC/include/color.hpp \
  /home/saad/Downloads/Team_OTC/include/heroes.hpp \
  /home/saad/Downloads/Team_OTC/include/console_utils.hpp \
  /usr/include/c++/15/random /usr/include/c++/15/cmath /usr/include/math.h \
@@ -215,4 +217,12 @@ CMakeFiles/dispatch_game.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/this_thread_sleep.h /usr/include/c++/15/queue \
  /usr/include/c++/15/deque /usr/include/c++/15/bits/stl_deque.h \
  /usr/include/c++/15/bits/deque.tcc /usr/include/c++/15/bits/stl_heap.h \
- /usr/include/c++/15/bits/stl_queue.h
+ /usr/include/c++/15/bits/stl_queue.h /usr/include/c++/15/sstream \
+ /usr/include/c++/15/bits/sstream.tcc /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h

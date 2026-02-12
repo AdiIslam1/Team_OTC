@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/saad/Downloads/Team_OTC/src/color.cpp" "CMakeFiles/dispatch_game.dir/src/color.cpp.o" "gcc" "CMakeFiles/dispatch_game.dir/src/color.cpp.o.d"
+  "/home/saad/Downloads/Team_OTC/src/console_utils.cpp" "CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o" "gcc" "CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o.d"
+  "/home/saad/Downloads/Team_OTC/src/dashboard.cpp" "CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o" "gcc" "CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o.d"
   "/home/saad/Downloads/Team_OTC/src/heroes.cpp" "CMakeFiles/dispatch_game.dir/src/heroes.cpp.o" "gcc" "CMakeFiles/dispatch_game.dir/src/heroes.cpp.o.d"
   "/home/saad/Downloads/Team_OTC/src/main.cpp" "CMakeFiles/dispatch_game.dir/src/main.cpp.o" "gcc" "CMakeFiles/dispatch_game.dir/src/main.cpp.o.d"
   "/home/saad/Downloads/Team_OTC/src/stressCalls.cpp" "CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o" "gcc" "CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o.d"

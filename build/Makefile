@@ -153,6 +153,54 @@ src/color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/color.cpp.s
 .PHONY : src/color.cpp.s
 
+src/console_utils.o: src/console_utils.cpp.o
+.PHONY : src/console_utils.o
+
+# target to build an object file
+src/console_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o
+.PHONY : src/console_utils.cpp.o
+
+src/console_utils.i: src/console_utils.cpp.i
+.PHONY : src/console_utils.i
+
+# target to preprocess a source file
+src/console_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/console_utils.cpp.i
+.PHONY : src/console_utils.cpp.i
+
+src/console_utils.s: src/console_utils.cpp.s
+.PHONY : src/console_utils.s
+
+# target to generate assembly for a file
+src/console_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/console_utils.cpp.s
+.PHONY : src/console_utils.cpp.s
+
+src/dashboard.o: src/dashboard.cpp.o
+.PHONY : src/dashboard.o
+
+# target to build an object file
+src/dashboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o
+.PHONY : src/dashboard.cpp.o
+
+src/dashboard.i: src/dashboard.cpp.i
+.PHONY : src/dashboard.i
+
+# target to preprocess a source file
+src/dashboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/dashboard.cpp.i
+.PHONY : src/dashboard.cpp.i
+
+src/dashboard.s: src/dashboard.cpp.s
+.PHONY : src/dashboard.s
+
+# target to generate assembly for a file
+src/dashboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dispatch_game.dir/build.make CMakeFiles/dispatch_game.dir/src/dashboard.cpp.s
+.PHONY : src/dashboard.cpp.s
+
 src/heroes.o: src/heroes.cpp.o
 .PHONY : src/heroes.o
 
@@ -237,6 +285,12 @@ help:
 	@echo "... src/color.o"
 	@echo "... src/color.i"
 	@echo "... src/color.s"
+	@echo "... src/console_utils.o"
+	@echo "... src/console_utils.i"
+	@echo "... src/console_utils.s"
+	@echo "... src/dashboard.o"
+	@echo "... src/dashboard.i"
+	@echo "... src/dashboard.s"
 	@echo "... src/heroes.o"
 	@echo "... src/heroes.i"
 	@echo "... src/heroes.s"

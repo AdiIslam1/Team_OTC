@@ -86,10 +86,38 @@ CMakeFiles/dispatch_game.dir/src/color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dispatch_game.dir/src/color.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saad/Downloads/Team_OTC/src/color.cpp -o CMakeFiles/dispatch_game.dir/src/color.cpp.s
 
+CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o: CMakeFiles/dispatch_game.dir/flags.make
+CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o: /home/saad/Downloads/Team_OTC/src/console_utils.cpp
+CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o: CMakeFiles/dispatch_game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/Team_OTC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o -MF CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o.d -o CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o -c /home/saad/Downloads/Team_OTC/src/console_utils.cpp
+
+CMakeFiles/dispatch_game.dir/src/console_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dispatch_game.dir/src/console_utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/saad/Downloads/Team_OTC/src/console_utils.cpp > CMakeFiles/dispatch_game.dir/src/console_utils.cpp.i
+
+CMakeFiles/dispatch_game.dir/src/console_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dispatch_game.dir/src/console_utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saad/Downloads/Team_OTC/src/console_utils.cpp -o CMakeFiles/dispatch_game.dir/src/console_utils.cpp.s
+
+CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o: CMakeFiles/dispatch_game.dir/flags.make
+CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o: /home/saad/Downloads/Team_OTC/src/dashboard.cpp
+CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o: CMakeFiles/dispatch_game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/Team_OTC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o -MF CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o.d -o CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o -c /home/saad/Downloads/Team_OTC/src/dashboard.cpp
+
+CMakeFiles/dispatch_game.dir/src/dashboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dispatch_game.dir/src/dashboard.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/saad/Downloads/Team_OTC/src/dashboard.cpp > CMakeFiles/dispatch_game.dir/src/dashboard.cpp.i
+
+CMakeFiles/dispatch_game.dir/src/dashboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dispatch_game.dir/src/dashboard.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saad/Downloads/Team_OTC/src/dashboard.cpp -o CMakeFiles/dispatch_game.dir/src/dashboard.cpp.s
+
 CMakeFiles/dispatch_game.dir/src/heroes.cpp.o: CMakeFiles/dispatch_game.dir/flags.make
 CMakeFiles/dispatch_game.dir/src/heroes.cpp.o: /home/saad/Downloads/Team_OTC/src/heroes.cpp
 CMakeFiles/dispatch_game.dir/src/heroes.cpp.o: CMakeFiles/dispatch_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/Team_OTC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dispatch_game.dir/src/heroes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/Team_OTC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dispatch_game.dir/src/heroes.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dispatch_game.dir/src/heroes.cpp.o -MF CMakeFiles/dispatch_game.dir/src/heroes.cpp.o.d -o CMakeFiles/dispatch_game.dir/src/heroes.cpp.o -c /home/saad/Downloads/Team_OTC/src/heroes.cpp
 
 CMakeFiles/dispatch_game.dir/src/heroes.cpp.i: cmake_force
@@ -103,7 +131,7 @@ CMakeFiles/dispatch_game.dir/src/heroes.cpp.s: cmake_force
 CMakeFiles/dispatch_game.dir/src/main.cpp.o: CMakeFiles/dispatch_game.dir/flags.make
 CMakeFiles/dispatch_game.dir/src/main.cpp.o: /home/saad/Downloads/Team_OTC/src/main.cpp
 CMakeFiles/dispatch_game.dir/src/main.cpp.o: CMakeFiles/dispatch_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/Team_OTC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dispatch_game.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/Team_OTC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dispatch_game.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dispatch_game.dir/src/main.cpp.o -MF CMakeFiles/dispatch_game.dir/src/main.cpp.o.d -o CMakeFiles/dispatch_game.dir/src/main.cpp.o -c /home/saad/Downloads/Team_OTC/src/main.cpp
 
 CMakeFiles/dispatch_game.dir/src/main.cpp.i: cmake_force
@@ -117,7 +145,7 @@ CMakeFiles/dispatch_game.dir/src/main.cpp.s: cmake_force
 CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o: CMakeFiles/dispatch_game.dir/flags.make
 CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o: /home/saad/Downloads/Team_OTC/src/stressCalls.cpp
 CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o: CMakeFiles/dispatch_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/Team_OTC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saad/Downloads/Team_OTC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o -MF CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o.d -o CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o -c /home/saad/Downloads/Team_OTC/src/stressCalls.cpp
 
 CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.i: cmake_force
@@ -131,6 +159,8 @@ CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.s: cmake_force
 # Object files for target dispatch_game
 dispatch_game_OBJECTS = \
 "CMakeFiles/dispatch_game.dir/src/color.cpp.o" \
+"CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o" \
+"CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o" \
 "CMakeFiles/dispatch_game.dir/src/heroes.cpp.o" \
 "CMakeFiles/dispatch_game.dir/src/main.cpp.o" \
 "CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o"
@@ -139,13 +169,15 @@ dispatch_game_OBJECTS = \
 dispatch_game_EXTERNAL_OBJECTS =
 
 dispatch_game: CMakeFiles/dispatch_game.dir/src/color.cpp.o
+dispatch_game: CMakeFiles/dispatch_game.dir/src/console_utils.cpp.o
+dispatch_game: CMakeFiles/dispatch_game.dir/src/dashboard.cpp.o
 dispatch_game: CMakeFiles/dispatch_game.dir/src/heroes.cpp.o
 dispatch_game: CMakeFiles/dispatch_game.dir/src/main.cpp.o
 dispatch_game: CMakeFiles/dispatch_game.dir/src/stressCalls.cpp.o
 dispatch_game: CMakeFiles/dispatch_game.dir/build.make
 dispatch_game: CMakeFiles/dispatch_game.dir/compiler_depend.ts
 dispatch_game: CMakeFiles/dispatch_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/saad/Downloads/Team_OTC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable dispatch_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/saad/Downloads/Team_OTC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable dispatch_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dispatch_game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
